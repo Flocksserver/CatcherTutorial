@@ -7,22 +7,25 @@ class Game {
   int score;
   float difficulty;
 
-  //background
-  color darkGrey = color(45, 50, 50);
-
   Catcher catcher;
   CoinShower shower;
   StatsPrinter statsPrinter;
 
   //Array of all current coins to draw
-  ArrayList<Coin> ingameCoins = new ArrayList<Coin>();
+  ArrayList<Coin> ingameCoins;
 
+
+  public Game (){
+    init();  
+  }
+  
   void init() {
     lives = 5;
     score = 0;
     //Velocity the coins falling down, depends on display height.
     difficulty = gameHeight/900;
-
+    
+    ingameCoins = new ArrayList<Coin>();
     catcher = new Catcher();
     shower = new CoinShower();
     statsPrinter = new StatsPrinter();
@@ -32,15 +35,16 @@ class Game {
     return lives <= 0;
   }
 
-  void start() {
-    background(darkGrey);
+  void execute() {
     if (!gameOver()) {
       catcher.draw();
       shower.start(ingameCoins, difficulty);
       checkIngameCoins();
+      setDifficulty();
+      statsPrinter.print(lives, score);
+    }else{
+      state = stateWaitToRestart;
     }
-    statsPrinter.print(lives, score);
-    setDifficulty();
   }
 
   /*
@@ -78,7 +82,7 @@ class Game {
     the coin has fallen out of the screen
    */
   boolean isInOutZone(Coin coin) {
-    return coin.yPos >= gameHeight;
+    return coin.yPos + coin.coinHeigth/2 >= gameHeight-1;
   }
   
   /*

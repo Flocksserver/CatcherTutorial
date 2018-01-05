@@ -9,7 +9,6 @@ class Coin {
   float coinWidth;
   float coinHeigth;
   float velocity;
-  color yellow = color(255, 255, 0);
 
   public Coin() {
     ellipseMode(CENTER);

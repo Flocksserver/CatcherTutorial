@@ -17,6 +17,7 @@ class Catcher {
   void init( ) {
     catcherWidth = gameWidth/8;
     catcherHeight = gameHeight/100;
+    fill(255);
     c = createShape(RECT, 0, 0, catcherWidth, catcherHeight);
     yPos = gameHeight-(gameHeight/8);
     xPos = gameWidth/2;
