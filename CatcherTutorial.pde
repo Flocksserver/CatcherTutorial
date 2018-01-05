@@ -30,9 +30,9 @@ color yellow = color(255, 255, 0);
 void setup() {
   fullScreen(P2D);
   //On Desktop
-  //scale = 1;
+  scale = 3;
   //On Android
-  scale = displayDensity;
+  //scale = displayDensity;
   font = createFont("SansSerif", 60 * scale);
   textWidth = 22;
   textWidthBig = 100;
@@ -56,6 +56,8 @@ void draw() {
     game.execute();
   }
   if (state == stateWaitToRestart) {
+    playerPosX = 0;
+    playerPosY = 0;
     highscore.execute(game.score);
   }
   if (state == stateGameRestart) {
