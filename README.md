@@ -2,10 +2,10 @@
 This is a processing app - Used for upcoming tutorial to teach step by step processing by example. This game can be executed as an android or desktop app.
 ## Android Screenshots
 <div>
-<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/phone/start.jpg" width="180">
-<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/phone/ingame1.jpg" width="180">
-<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/phone/ingame2.jpg" width="180">
-<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/phone/end.jpg" width="180">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/phone/start.jpg" width="200">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/phone/ingame1.jpg" width="200">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/phone/ingame2.jpg" width="200">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/phone/end.jpg" width="200">
 </div>
 
 ## Desktop Screenshots
