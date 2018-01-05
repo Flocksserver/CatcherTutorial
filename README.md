@@ -1,7 +1,11 @@
 # Catcher Game Application Tutorial
 This is a processing app - Used for upcoming tutorial to teach step by step processing by example. This game can be executed as an android or desktop app.
 ## Android Screenshots
-![AndroidStart](https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/phone/start.jpg | width=100)
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/phone/start.jpg" width="150">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/phone/ingame1.jpg" width="150">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/phone/ingame2.jpg" width="150">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/phone/end.jpg" width="150">
+
 ## Desktop Screenshots
 
 # LICENSE
