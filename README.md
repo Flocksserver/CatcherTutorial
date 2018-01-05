@@ -10,10 +10,10 @@ This is a processing app - Used for upcoming tutorial to teach step by step proc
 
 ## Desktop Screenshots
 <div>
-<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/desktop/start.jpg" width="200">
-<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/desktop/ingame1.jpg" width="200">
-<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/desktop/ingame2.jpg" width="200">
-<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/desktop/end.jpg" width="200">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/desktop/start.png" width="400">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/desktop/ingame1.png" width="400">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/desktop/ingame2.png" width="400">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/screenshots/desktop/end.png" width="400">
 </div>
 
 # LICENSE
