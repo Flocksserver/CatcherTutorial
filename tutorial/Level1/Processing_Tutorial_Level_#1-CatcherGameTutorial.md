@@ -7,7 +7,7 @@ In diesem Level lernst du die beiden Hauptfunkionen in Processing kennen. In die
 | Hardware              | PC (Windows/Mac/Linux)  |
 | Software              | Browser, Internetzugang, Processing IDE        |
 | CatcherTutorial Level | 0                       |
-| Programmierung        | Funktionen, Funktionsparamter, Variablen|
+| Programmierung        | Funktionen, Funktionsparameter, Variablen|
 
 ## Vorbereitung
 - Wir gehen nicht auf alle Programmiergrundlagen ein. Wenn du noch nie etwas programmiert hast, schaue dir die [Hello Processing Videos](http://hello.processing.org/) an. Ich würde aber auch allen Processing Neulingen diese Videoreihe empfehlen. So kannst du dir die Suche für einige processing-spezifischen Besonderheiten sparen.
@@ -39,7 +39,7 @@ Das Fenster, das du erstellst hat eine Breite und Höhe in Pixel. Jeder Pixel ka
 </div>
 
 ### Aufgabe 1
-1. Erstelle ein Fenster in folgender Größe Breite 400 Pixel und Höhe 640 Pixel
+1. Erstelle ein Fenster in folgender Größe: Breite 400 Pixel und Höhe 640 Pixel
 2. Setze den Hintergrund auf eine Farbe
 3. Zeichne den *Catcher* (ein Rechteck) im unteren Bereich des Fensters
 4. Starte dein Programm mit dem Play-Button oben links in der Entwicklungsumgebung
