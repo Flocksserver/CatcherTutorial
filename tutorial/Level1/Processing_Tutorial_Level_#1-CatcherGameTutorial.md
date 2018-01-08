@@ -1,0 +1,40 @@
+# Zusammenfassung
+In diesem Level lernst du die beiden Hauptfunkionen in Processing kennen. In diesem Zuge schauen wir uns das Koordinatensystem eines Fensters an. Du wirst außerdem nach diesem Level Formen darstellen können.
+
+| Thema                 | Voraussetzungen         |
+| --------------------- | ----------------------- |
+| Schwierigkeit         | :star: :star:           |
+| Hardware              | PC (Windows/Mac/Linux)  |
+| Software              | Browser, Internetzugang, Processing IDE        |
+| CatcherTutorial Level | 0                       |
+| Programmierung        | Funktionen, Funktionsparamter, Variablen|
+
+## Vorbereitung
+- Wir gehen nicht auf alle Programmiergrundlagen ein. Wenn du noch nie etwas programmiert hast, schaue dir die [Hello Processing Videos](http://hello.processing.org/) an. Ich empfehle aber allen Processing Neulingen diese Videoreihe anzuschauen. So kannst du dir die Suche für einige processing-spezifischen Besonderheiten sparen.
+- Achte darauf, dass dein Modus auf *Java* gestellt ist.
+- Speicher den derzeit leeren Sketch unter einem Namen deiner Wahl ab
+- Öffne die Einstellungen (Datei -> Einstellungen) der Processing IDE. Aktiviere die Checkbox *Codevervollständigung Ctrl-Leerzeichen*. Wenn du beim Programmieren Variablennamen, Funktionsamen oder Paramter beginnst zu Tippen, kannst du dir von der Entwicklungsumgebung mit *Ctrl-Leerzeichen* Vorschläge zur Vervollständigung geben lassen.
+- Öffne die [Projektwebseite](https://processing.org/) zu Processing. [Beispiele](https://processing.org/examples/) und [Referenzen](https://processing.org/reference/) solltest du hier finden und auch nutzen!
+
+## Das Spiel
+Ich möchte mit dir zusammen ein Spiel programmieren. Wir nennen es Catcher. Ziel soll es sein, umherfliegende Objekte einzusammeln und somit einen möglichst hohen Highscore zu erreichen. Verpasste Objekte ziehen Leben ab. Das Spiel muss gestartet und nach verlorener Runde neu gestartet werden können.
+<div>
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level1/skizze.png" width="400">
+</div>
+
+## Programmierung
+In Processing existieren zwei wichtige Hauptfunktionen. Die setup-Methode wird zu Beginn des Programmstarts einmal ausgeführt. Die draw-Methode wird in einer Schleife dauerhaft ausgeführt.
+```processing
+void setup() {
+
+}
+
+void draw() {
+
+}
+```
+
+
+
+# Nächstes Level
+Hier geht es weiter zum [nächsten Level :arrow_right:](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level1/Processing_Tutorial_Level_%232-CatcherGameTutorial.md)
