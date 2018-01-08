@@ -10,7 +10,7 @@ In diesem Level lernst du die beiden Hauptfunkionen in Processing kennen. In die
 | Programmierung        | Funktionen, Funktionsparamter, Variablen|
 
 ## Vorbereitung
-- Wir gehen nicht auf alle Programmiergrundlagen ein. Wenn du noch nie etwas programmiert hast, schaue dir die [Hello Processing Videos](http://hello.processing.org/) an. Ich empfehle aber allen Processing Neulingen diese Videoreihe anzuschauen. So kannst du dir die Suche für einige processing-spezifischen Besonderheiten sparen.
+- Wir gehen nicht auf alle Programmiergrundlagen ein. Wenn du noch nie etwas programmiert hast, schaue dir die [Hello Processing Videos](http://hello.processing.org/) an. Ich würde aber auch allen Processing Neulingen diese Videoreihe empfehlen. So kannst du dir die Suche für einige processing-spezifischen Besonderheiten sparen.
 - Achte darauf, dass dein Modus auf *Java* gestellt ist.
 - Speicher den derzeit leeren Sketch unter einem Namen deiner Wahl ab
 - Öffne die Einstellungen (Datei -> Einstellungen) der Processing IDE. Aktiviere die Checkbox *Codevervollständigung Ctrl-Leerzeichen*. Wenn du beim Programmieren Variablennamen, Funktionsamen oder Paramter beginnst zu Tippen, kannst du dir von der Entwicklungsumgebung mit *Ctrl-Leerzeichen* Vorschläge zur Vervollständigung geben lassen.
@@ -39,13 +39,18 @@ Das Fenster, das du erstellst hat eine Breite und Höhe in Pixel. Jeder Pixel ka
 </div>
 
 ### Aufgabe 1
-- Erstelle ein Fenster in folgender Größe Breite 400 Pixel und Höhe 640 Pixel
-- Setze den Hintergrund auf eine Farbe
-- Zeichne den *Catcher* (ein Rechteck) im unteren Bereich des Fensters
-- Starte dein Programm mit dem Play-Button oben links in der Entwicklungsumgebung
+1. Erstelle ein Fenster in folgender Größe Breite 400 Pixel und Höhe 640 Pixel
+2. Setze den Hintergrund auf eine Farbe
+3. Zeichne den *Catcher* (ein Rechteck) im unteren Bereich des Fensters
+4. Starte dein Programm mit dem Play-Button oben links in der Entwicklungsumgebung
 
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level1/CatcherTutorialLevel1A1/CatcherTutorialLevel1A1.pde)
 
+### Aufgabe 2
+1. Der *Catcher* soll sich entlang der x-Achse nach rechts und links verschieben lassen (mit der Maus).
+2. Der *Catcher* soll nur verschoben werden, wenn die Maus gedrückt ist.
+
+[Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level1/CatcherTutorialLevel1A2/CatcherTutorialLevel1A2.pde)
 
 # Nächstes Level
 Hier geht es weiter zum [nächsten Level :arrow_right:](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level1/Processing_Tutorial_Level_%232-CatcherGameTutorial.md)
