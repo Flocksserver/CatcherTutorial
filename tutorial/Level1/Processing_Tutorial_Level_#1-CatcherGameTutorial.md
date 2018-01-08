@@ -6,7 +6,7 @@ In diesem Level lernst du die beiden Hauptfunkionen in Processing kennen. In die
 | Schwierigkeit         | :star: :star:           |
 | Hardware              | PC (Windows/Mac/Linux)  |
 | Software              | Browser, Internetzugang, Processing IDE        |
-| CatcherTutorial Level | 0                       |
+| CatcherTutorial Level | [0](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level0/Processing_Tutorial_Level_%230-CatcherGameTutorial.md)                       |
 | Programmierung        | Funktionen, Funktionsparameter, Variablen|
 
 ## Vorbereitung
@@ -53,4 +53,4 @@ Das Fenster, das du erstellst hat eine Breite und Höhe in Pixel. Jeder Pixel ka
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level1/CatcherTutorialLevel1A2/CatcherTutorialLevel1A2.pde)
 
 # Nächstes Level
-Hier geht es weiter zum [nächsten Level :arrow_right:](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level1/Processing_Tutorial_Level_%232-CatcherGameTutorial.md)
+Hier geht es weiter zum [nächsten Level :arrow_right:](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level2/Processing_Tutorial_Level_%232-CatcherGameTutorial.md)
