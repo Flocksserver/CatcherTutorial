@@ -22,21 +22,24 @@ Processing ist eine kostenlose Entwicklungsumgebung. Gehe auf die [Processing We
 Im Laufe des Tutorials wird die Anwendung nicht nur auf dem Desktop ausgeführt. Du wirst das Spiel auch auf einem Android Smartphone ausführen können. Hierzu muss der Android Modus in Processing aktiviert werden.
 #### 1.Schritt
 <div>
-<img src="./addmodus.png" width="400">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level0/addmodus.png" width="400">
 </div>
 
 #### 2.Schritt
 <div>
-<img src="./installmodus.png" width="400">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level0/installmodus.png" width="400">
 </div>
 
 #### 3.Schritt
 <div>
-<img src="./startmodus.png" width="400">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level0/startmodus.png" width="400">
 </div>
 
 #### 4.Schritt
 Nachdem du das erste mal den Android Modus startest, wirst du nach dem Android-SDK gefragt. Das SDK wird für das Kompilieren der Android-App benötigt. Wenn du noch kein Android-SDK auf dem PC hast kannst du dieses direkt herunterladen.
 <div>
-<img src="./downloadSDK.png" width="400">
-</div> 
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level0/downloadSDK.png" width="400">
+</div>
+
+# Nächstes Level
+Hier geht es weiter zum [nächsten Level :arrow_right:](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level1/Processing_Tutorial_Level_%231-CatcherGameTutorial.md)
