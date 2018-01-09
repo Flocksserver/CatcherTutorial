@@ -1,0 +1,56 @@
+# Zusammenfassung
+In diesem Level lernst du, wie man Klassen aus Bibliotheken einbinden und eigene Klassen erstellst. Du lernst was Instanzen von Klassen sind und wir strukturieren die Anwendung etwas um.
+
+| Thema                 | Voraussetzungen         |
+| --------------------- | ----------------------- |
+| Schwierigkeit         | :star: :star: :star:    |
+| Hardware              | PC (Windows/Mac/Linux)  |
+| Software              | Browser, Internetzugang, Processing IDE        |
+| CatcherTutorial Level | [0](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level0/Processing_Tutorial_Level_%230-CatcherGameTutorial.md),[1](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level1/Processing_Tutorial_Level_%231-CatcherGameTutorial.md),[2](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level2/Processing_Tutorial_Level_%232-CatcherGameTutorial.md)                        |
+| Programmierung        | Aufruf von Funktionen, Variablen,  Events (mousePressed), Bedingte Anweisung und Verzweigung (if, else)), Funktionen, for-Schleife|
+
+## Programmierung
+Bisher hast du nur Klassen aus der Processing Bibliothek verwendet. Bevor wir uns eine Erweiterung anschauen... Was sind eigentlich Klassen? Klassen sind Bauanleitungen für Objekte. Objekte wiederum sind konkrete Instanzen (Lebendige Kopien der Klasse) im Speicher deines Computers, auf denen du Funktionen aufrufen und die du im Fenster dann sehen kannst. Wenn du ein Objekt erzeugst geschieht dies auf Grundlage einer Klasse. Das kann zum einen implizit geschehen. Beispielsweise beim Aufruf von: *createShape(ELLIPSE, 0, 0, 10, 10);* Dies ist eine Funktion, die ein *PShape* Objekt [erstellt und zurück gibt](http://processing.github.io/processing-javadocs/core/processing/core/PApplet.html#createShape--). Zum anderen kannst du dies explizit durch das **new**-Schlüsselwort erzeugen. Beispielsweise beim Erzeugen einer neuen Liste.
+```processing
+PShape shape = createShape(ELLIPSE, 0, 0, 10, 10);
+ArrayList<Float> list = new ArrayList<Float>();
+```
+Da Processing auf der Programmiersprache Java basiert, kannst du auch Klassen aus der Standard Java Bibliothek verwenden, um Objekte zu erzeugen. Hierfür musst du die konkrete Klasse importieren. Import Befehle müssen immer ganz am Anfang deiner Datei stehen.
+```processing
+import java.util.Stack;
+```
+Neben der Möglichkeit bereits bestehende Klassen zu verwenden, kannst du auch eigene Klassen erstellen. Diese sollten am besten in eine separaten Datei ausgelagert werden. In der Klassen können Variablen und Funktionen wie bereits gelernt verwendet werden.
+```processing
+class Catcher {
+
+  int a = 4;
+
+  void doSomeWork(){
+
+  }
+
+}
+```
+Solch eine Klasse kannst du instanziieren (also ein Objekt davon erzeugen) und dann auf die Attribute (Variablen) und Funktionen zugreifen.
+```processing
+Catcher catcher = new Catcher();
+void draw(){
+  int b = catcher.a; // b wird auf 4 gesetzt
+  catcher.doSomeWork(); // Aufruf der Catcher Methode doSomeWork()
+}
+```
+### Aufgabe 1
+1. Informiere dich was ein Stack ist und wie der Java Stack aus [java.util.Stack](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html) funktioniert.
+2. Baue deine Anwendung wie folgt um: Du hast einen Stack mit allen Objekten, die zukünftig herunterfallen sollen. Du hast eine Liste, in der alle Objekte sind, die im Fallen sind und angezeigt werden.
+
+[Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level3/CatcherTutorialLevel2A1/CatcherTutorialLevel3A1.pde)
+
+### Aufgabe 2
+1. Erstelle eine neue Klasse für deine herunterfallenden Objekte. Hierzu gehst du auf den Pfeil neben dem Tab in der Processing IDE. Dann wählst du *Neuer Tab* und vergibst der Datei einen Namen (optimal wäre der selbe Name wie die Klasse heißen soll).
+<div>
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level3/newTab.png" width="400">
+</div>
+
+
+# Nächstes Level
+Hier geht es weiter zum [nächsten Level :arrow_right:](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level4/Processing_Tutorial_Level_%234-CatcherGameTutorial.md)
