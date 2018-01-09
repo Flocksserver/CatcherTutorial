@@ -10,7 +10,12 @@ In diesem Level lernst du, wie man Klassen aus Bibliotheken einbinden und eigene
 | Programmierung        | Aufruf von Funktionen, Variablen,  Events (mousePressed), Bedingte Anweisung und Verzweigung (if, else)), Funktionen, for-Schleife|
 
 ## Programmierung
-Bisher hast du nur Klassen aus der Processing Bibliothek verwendet. Bevor wir uns eine Erweiterung anschauen... Was sind eigentlich Klassen? Klassen sind Bauanleitungen für Objekte. Objekte wiederum sind konkrete Instanzen (Lebendige Kopien der Klasse) im Speicher deines Computers, auf denen du Funktionen aufrufen und die du im Fenster dann sehen kannst. Wenn du ein Objekt erzeugst geschieht dies auf Grundlage einer Klasse. Das kann zum einen implizit geschehen. Beispielsweise beim Aufruf von: *createShape(ELLIPSE, 0, 0, 10, 10);* Dies ist eine Funktion, die ein *PShape* Objekt [erstellt und zurück gibt](http://processing.github.io/processing-javadocs/core/processing/core/PApplet.html#createShape--). Zum anderen kannst du dies explizit durch das **new**-Schlüsselwort erzeugen. Beispielsweise beim Erzeugen einer neuen Liste.
+Bisher hast du nur Klassen aus der Processing Bibliothek verwendet. Bevor wir uns eine Erweiterung anschauen... Was sind eigentlich Klassen? Klassen sind Bauanleitungen für Objekte. Objekte wiederum sind konkrete Instanzen (Lebendige Kopien der Klasse) im Speicher deines Computers, auf denen du Funktionen aufrufen und die du im Fenster dann sehen kannst. Wenn du ein Objekt erzeugst geschieht dies auf Grundlage einer Klasse.
+<div>
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level3/classobject.png" width="400">
+</div>
+<br>
+Das kann zum einen implizit geschehen. Beispielsweise beim Aufruf von: *createShape(ELLIPSE, 0, 0, 10, 10);* Dies ist eine Funktion, die ein *PShape* Objekt [erstellt und zurück gibt](http://processing.github.io/processing-javadocs/core/processing/core/PApplet.html#createShape--). Zum anderen kannst du dies explizit durch das **new**-Schlüsselwort erzeugen. Beispielsweise beim Erzeugen einer neuen Liste.
 ```processing
 PShape shape = createShape(ELLIPSE, 0, 0, 10, 10);
 ArrayList<Float> list = new ArrayList<Float>();
