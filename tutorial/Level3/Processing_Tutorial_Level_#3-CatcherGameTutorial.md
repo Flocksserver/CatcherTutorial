@@ -22,13 +22,10 @@ import java.util.Stack;
 Neben der Möglichkeit bereits bestehende Klassen zu verwenden, kannst du auch eigene Klassen erstellen. Diese sollten am besten in eine separaten Datei ausgelagert werden. In der Klassen können Variablen und Funktionen wie bereits gelernt verwendet werden.
 ```processing
 class Catcher {
-
   int a = 4;
-
   void doSomeWork(){
 
   }
-
 }
 ```
 Solch eine Klasse kannst du instanziieren (also ein Objekt davon erzeugen) und dann auf die Attribute (Variablen) und Funktionen zugreifen.
@@ -39,11 +36,22 @@ void draw(){
   catcher.doSomeWork(); // Aufruf der Catcher Methode doSomeWork()
 }
 ```
+Klassen besitzen wie Processing eine Möglichkeit bestimmten Programmcode nur einmal beim ersten Erstellen auszuführen. Diese Möglichkeit heißt Konstruktor. Diese ist vergleichbar mit der setup-Methode.
+```processing
+class Catcher {
+  int a = 4;
+  public Catcher(){ // Wird einmalig beim Instanziieren ausgeführt
+
+  }
+  void doSomeWork(){
+  }
+}
+```
 ### Aufgabe 1
 1. Informiere dich was ein Stack ist und wie der Java Stack aus [java.util.Stack](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html) funktioniert.
 2. Baue deine Anwendung wie folgt um: Du hast einen Stack mit allen Objekten, die zukünftig herunterfallen sollen. Du hast eine Liste, in der alle Objekte sind, die im Fallen sind und angezeigt werden.
 
-[Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level3/CatcherTutorialLevel2A1/CatcherTutorialLevel3A1.pde)
+[Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level3/CatcherTutorialLevel3A1/CatcherTutorialLevel3A1.pde)
 
 ### Aufgabe 2
 1. Erstelle eine neue Klasse für deine herunterfallenden Objekte. Hierzu gehst du auf den Pfeil neben dem Tab in der Processing IDE. Dann wählst du *Neuer Tab* und vergibst der Datei einen Namen (optimal wäre der selbe Name wie die Klasse heißen soll).
@@ -51,6 +59,9 @@ void draw(){
 <img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level3/newTab.png" width="400">
 </div>
 
+2. Füge alle für diese Klasse Funktionen und Attribute zu. Dadurch kannst du Funktionalität kapseln. Die Einstiegsdatei wird dadurch schlanker und übersichtlicher. Derzeit muss sie nur noch die Objekte instanziieren, die Liste/den Stack verwalten und eine Methode auf den Objekten zum darstellen aufrufen.
+
+[Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level3/CatcherTutorialLevel3A2/)
 
 # Nächstes Level
 Hier geht es weiter zum [nächsten Level :arrow_right:](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level4/Processing_Tutorial_Level_%234-CatcherGameTutorial.md)
