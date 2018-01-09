@@ -15,6 +15,7 @@ Bisher hast du nur Klassen aus der Processing Bibliothek verwendet. Bevor wir un
 <img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level3/classobject.png" width="400">
 </div>
 <br>
+
 Das kann zum einen implizit geschehen. Beispielsweise beim Aufruf von: *createShape(ELLIPSE, 0, 0, 10, 10);* Dies ist eine Funktion, die ein *PShape* Objekt [erstellt und zurück gibt](http://processing.github.io/processing-javadocs/core/processing/core/PApplet.html#createShape--). Zum anderen kannst du dies explizit durch das **new**-Schlüsselwort erzeugen. Beispielsweise beim Erzeugen einer neuen Liste.
 ```processing
 PShape shape = createShape(ELLIPSE, 0, 0, 10, 10);
