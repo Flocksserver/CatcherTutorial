@@ -64,5 +64,28 @@ class Catcher {
 
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level3/CatcherTutorialLevel3A2/)
 
+### Aufgabe 3
+1. Um die Einstiegsdatei noch übersichtlicher zu gestalten wiederhole die Aufgabe 2 mit dem *Catcher*. Hierzu bietet es sich an innerhalb der Catcher-Klasse auch die PShape-Klasse zu nutzen.
+2. Wir Programmieren ein Spiel. Da ist es angebracht, spiel-spezifische Logik in einer entsprechenden Klasse zu organisieren. Somit reduzieren wir die Einstiegsdatei noch weiter. Erstelle eine *Game*-Klasse und verschiebe die restliche Logik aus der Einstiegsdatei. Nun sollte die Einstiegsdatei neben dem Instanziieren der Game-Klasse und ein startender Methode-Aufruf auf dessen Objekt nur noch für das Aufnehmen des *mousePressed*-Events zuständig sein.
+
+```processing
+float playerPosX;
+Game game;
+
+void setup() {
+  size(400, 640);
+  game = new Game();
+}
+
+void draw() {
+  background(50);
+  if (mousePressed) {
+    playerPosX = mouseX;
+  }
+  game.execute();
+}
+```
+[Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level3/CatcherTutorialLevel3A3/)
+
 # Nächstes Level
 Hier geht es weiter zum [nächsten Level :arrow_right:](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level4/Processing_Tutorial_Level_%234-CatcherGameTutorial.md)
