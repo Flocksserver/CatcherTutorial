@@ -6,7 +6,8 @@
 final int stateWaitToStart = 0;
 final int stateGameRunning = 1;
 final int stateWaitToRestart = 2;
-final int stateGameRestart = 3;
+final int stateHighscoreRunning = 3;
+final int stateGameRestart = 4;
 int state = stateWaitToStart;
 
 Startscreen startscreen;
@@ -30,9 +31,9 @@ color yellow = color(255, 255, 0);
 void setup() {
   fullScreen(P2D);
   //On Desktop
-  scale = 3;
+  //scale = 3;
   //On Android
-  //scale = displayDensity;
+  scale = displayDensity;
   font = createFont("SansSerif", 60 * scale);
   textWidth = 22;
   textWidthBig = 100;
@@ -58,6 +59,9 @@ void draw() {
   if (state == stateWaitToRestart) {
     playerPosX = 0;
     playerPosY = 0;
+    state = stateHighscoreRunning;
+  }
+  if (state == stateHighscoreRunning) {
     highscore.execute(game.score);
   }
   if (state == stateGameRestart) {
