@@ -1,10 +1,16 @@
-# Catcher Game Application Tutorial
+# Learn Processing! Catcher Game Application Tutorial
 This is a processing app - Used for a tutorial to teach step by step processing by example. This game can be executed as an android or desktop app.
 
 Start now!
 
 :de: [German version](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level0/Processing_Tutorial_Level_%230-CatcherGameTutorial.md)
-
+|Level|difficulty|
+|---|---|
+|[0](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level0/Processing_Tutorial_Level_%230-CatcherGameTutorial.md)|:star:|
+|[1](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level1/Processing_Tutorial_Level_%231-CatcherGameTutorial.md)|:star: :star:|
+|[2](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level2/Processing_Tutorial_Level_%232-CatcherGameTutorial.md)|:star: :star: :star:|
+|3|:star: :star: :star:|
+|4|:star: :star:|
 :gb::us: English version coming soon
 ## Android Screenshots
 <div>
