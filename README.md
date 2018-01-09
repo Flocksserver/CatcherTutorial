@@ -4,6 +4,7 @@ This is a processing app - Used for a tutorial to teach step by step processing 
 Start now!
 
 :de: [German version](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level0/Processing_Tutorial_Level_%230-CatcherGameTutorial.md)
+
 |Level|difficulty|
 |---|---|
 |[0](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level0/Processing_Tutorial_Level_%230-CatcherGameTutorial.md)|:star:|
@@ -11,6 +12,7 @@ Start now!
 |[2](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level2/Processing_Tutorial_Level_%232-CatcherGameTutorial.md)|:star: :star: :star:|
 |3|:star: :star: :star:|
 |4|:star: :star:|
+
 :gb::us: English version coming soon
 ## Android Screenshots
 <div>
