@@ -1,5 +1,5 @@
 # Zusammenfassung
-In diesem Level lernst du die beiden Hauptfunkionen in Processing kennen. In diesem Zuge schauen wir uns das Koordinatensystem eines Fensters an. Du wirst außerdem nach diesem Level Formen darstellen können.
+In diesem Level lernst du die beiden Hauptfunkionen in Processing kennen. In diesem Zuge schauen wir uns das Koordinatensystem eines Fensters an. Du wirst außerdem nach diesem Level Formen darstellen können und einige Programmiergrundlagen kennen lernen.
 
 | Thema                 | Voraussetzungen         |
 | --------------------- | ----------------------- |
@@ -7,7 +7,7 @@ In diesem Level lernst du die beiden Hauptfunkionen in Processing kennen. In die
 | Hardware              | PC (Windows/Mac/Linux)  |
 | Software              | Browser, Internetzugang, Processing IDE        |
 | CatcherTutorial Level | [0](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level0/Processing_Tutorial_Level_%230-CatcherGameTutorial.md)                       |
-| Programmierung        | Funktionen, Funktionsparameter, Variablen|
+| Programmierung        | Aufruf von Funktionen |
 
 ## Vorbereitung
 - Wir gehen nicht auf alle Programmiergrundlagen ein. Wenn du noch nie etwas programmiert hast, schaue dir die [Hello Processing Videos](http://hello.processing.org/) an. Ich würde aber auch allen Processing Neulingen diese Videoreihe empfehlen. So kannst du dir die Suche für einige processing-spezifischen Besonderheiten sparen.
@@ -37,7 +37,42 @@ Das Fenster, das du erstellst hat eine Breite und Höhe in Pixel. Jeder Pixel ka
 <div>
 <img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level1/coordinatesystem.png" width="400">
 </div>
+<br>
 
+**if/else** ist eine bedingte Anweisung und Verzweigung. Der Ausdruck im *if* wird ausgewertet. Wenn dieser Wahr (true) ist, wird der Programmcode *doA()* innerhalb der geschweiften Klammern ausgeführt - sonst nicht. Mit *else* hast du die Möglichkeit eine alternative Ausführung anzugeben. Dadurch wird immer das eine *doB()* **oder** das andere *doC()* ausgeführt.
+```processing
+if(isThisTrue){
+  doA();
+}
+
+if(isThisAlsoTrue){
+  doB();
+}else{
+  doC();
+}
+```
+Variablen sind Container, die einen Datentyp haben. Dies kann eine Zahl, eine Zeichenkette, ein boolesche Ausdruck oder ein beliebiges Objekt sein.
+```processing
+int a = 1; // Ganze Zahlen. a hat den Wert 1
+float b = 2.5; // Fließkommazahlen. b hat den Wert 2,5
+String c = "Catcher"; // Zeichenkette. c hat den Wert Catcher
+boolean d = true; // Boolesche Ausdruck (true oder false). d hat den Wert true
+PShape catcher; // Leeres Objekt PShape (noch nichts mit = zugewiesen) namens catcher.
+```
+Du kannst auf Variablen von überall zugreifen, wenn du sie *global* definiert hast. Das bedeutet außerhalb einer Funktion. Lokale Variablen innerhalb einer Funktion können auch nur dort verwendet werden.
+```processing
+float a = 3.4; // global
+void setup() {
+  float b = 1.3; //lokal
+  a // kann ich nutzen
+  b // kann ich nutzen
+}
+void draw() {
+  a // kann ich nutzen
+  b // kenne ich nicht - kann ich nicht nutzen
+}
+
+```
 ### Aufgabe 1
 1. Erstelle ein Fenster in folgender Größe: Breite 400 Pixel und Höhe 640 Pixel
 2. Setze den Hintergrund auf eine Farbe
