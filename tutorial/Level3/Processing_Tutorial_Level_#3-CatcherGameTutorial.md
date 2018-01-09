@@ -10,13 +10,13 @@ In diesem Level lernst du, wie man Klassen aus Bibliotheken einbinden und eigene
 | Programmierung        | Aufruf von Funktionen, Variablen,  Events (mousePressed), Bedingte Anweisung und Verzweigung (if, else)), Funktionen, for-Schleife|
 
 ## Programmierung
-Bisher hast du nur Klassen aus der Processing Bibliothek verwendet. Bevor wir uns eine Erweiterung anschauen... Was sind eigentlich Klassen? Klassen sind Bauanleitungen für Objekte. Objekte wiederum sind konkrete Instanzen (Lebendige Kopien der Klasse) im Speicher deines Computers, auf denen du Funktionen aufrufen und die du im Fenster dann sehen kannst. Wenn du ein Objekt erzeugst geschieht dies auf Grundlage einer Klasse.
+Bisher hast du nur Klassen aus der Processing Bibliothek verwendet. Bevor wir uns eine Erweiterung anschauen... Was sind eigentlich Klassen? Klassen sind Bauanleitungen für Objekte. Objekte wiederum sind konkrete Instanzen (lebendige Kopien der Klasse) im Arbeitsspeicher deines Computers. Auf ihnen kannst du Funktionen aufrufen und du kannst sie in dem Fenster anzeigen lassen. Immer wenn du ein Objekt erzeugst geschieht dies auf Grundlage einer Klasse.
 <div>
 <img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level3/classobject.png" width="400">
 </div>
 <br>
 
-Das kann zum einen implizit geschehen. Beispielsweise beim Aufruf von: *createShape(ELLIPSE, 0, 0, 10, 10);* Dies ist eine Funktion, die ein *PShape* Objekt [erstellt und zurück gibt](http://processing.github.io/processing-javadocs/core/processing/core/PApplet.html#createShape--). Zum anderen kannst du dies explizit durch das **new**-Schlüsselwort erzeugen. Beispielsweise beim Erzeugen einer neuen Liste.
+Das kann zum einen implizit geschehen. Beispielsweise beim Aufruf von: *createShape(ELLIPSE, 0, 0, 10, 10);* Dies ist eine Funktion, die ein *PShape* Objekt [erstellt und zurück gibt](http://processing.github.io/processing-javadocs/core/processing/core/PApplet.html#createShape--). Zum anderen kannst du Objekte explizit durch das **new**-Schlüsselwort erzeugen. Beispielsweise beim Erzeugen einer neuen Liste.
 ```processing
 PShape shape = createShape(ELLIPSE, 0, 0, 10, 10);
 ArrayList<Float> list = new ArrayList<Float>();
@@ -25,7 +25,7 @@ Da Processing auf der Programmiersprache Java basiert, kannst du auch Klassen au
 ```processing
 import java.util.Stack;
 ```
-Neben der Möglichkeit bereits bestehende Klassen zu verwenden, kannst du auch eigene Klassen erstellen. Diese sollten am besten in eine separaten Datei ausgelagert werden. In der Klassen können Variablen und Funktionen wie bereits gelernt verwendet werden.
+Neben der Möglichkeit bereits bestehende Klassen zu verwenden, kannst du auch eigene Klassen erstellen. Diese sollten am besten in eine separaten Datei ausgelagert werden. In der Klasse können Variablen und Funktionen wie bereits gelernt verwendet werden.
 ```processing
 class Catcher {
   int a = 4;
@@ -42,7 +42,7 @@ void draw(){
   catcher.doSomeWork(); // Aufruf der Catcher Methode doSomeWork()
 }
 ```
-Klassen besitzen wie Processing eine Möglichkeit bestimmten Programmcode nur einmal beim ersten Erstellen auszuführen. Diese Möglichkeit heißt Konstruktor. Diese ist vergleichbar mit der setup-Methode.
+Klassen besitzen wie Processing eine Möglichkeit bestimmten Programmcode nur einmal beim ersten Erstellen auszuführen. Diese Möglichkeit heißt Konstruktor. Das ist mit der setup-Methode vergleichbar.
 ```processing
 class Catcher {
   int a = 4;
@@ -60,7 +60,7 @@ class Catcher {
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level3/CatcherTutorialLevel3A1/CatcherTutorialLevel3A1.pde)
 
 ### Aufgabe 2
-1. Erstelle eine neue Klasse für deine herunterfallenden Objekte. Hierzu gehst du auf den Pfeil neben dem Tab in der Processing IDE. Dann wählst du *Neuer Tab* und vergibst der Datei einen Namen (optimal wäre der selbe Name wie die Klasse heißen soll).
+1. Erstelle eine neue Klasse für deine herunterfallenden Objekte. Hierzu gehst du auf den Pfeil neben dem Tab in der Processing IDE. Dann wählst du *Neuer Tab* und vergibst der Datei einen Namen (optimal ist der selbe Name wie die Klasse heißen soll).
 <div>
 <img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level3/newTab.png" width="400">
 </div>
@@ -72,7 +72,7 @@ class Catcher {
 
 ### Aufgabe 3
 1. Um die Einstiegsdatei noch übersichtlicher zu gestalten wiederhole die Aufgabe 2 mit dem *Catcher*. Hierzu bietet es sich an innerhalb der Catcher-Klasse auch die PShape-Klasse zu nutzen.
-2. Wir Programmieren ein Spiel. Da ist es angebracht, spiel-spezifische Logik in einer entsprechenden Klasse zu organisieren. Somit reduzieren wir die Einstiegsdatei noch weiter. Erstelle eine *Game*-Klasse und verschiebe die restliche Logik aus der Einstiegsdatei. Nun sollte die Einstiegsdatei neben dem Instanziieren der Game-Klasse und ein startender Methode-Aufruf auf dessen Objekt nur noch für das Aufnehmen des *mousePressed*-Events zuständig sein.
+2. Wir programmieren ein Spiel. Da ist es angebracht, spiel-spezifische Logik in einer entsprechenden Klasse zu organisieren. Somit reduzieren wir die Einstiegsdatei noch weiter. Erstelle eine *Game*-Klasse und verschiebe die restliche Logik aus der Einstiegsdatei. Nun sollte die Einstiegsdatei neben dem Instanziieren der Game-Klasse und ein startender Methode-Aufruf auf dessen Objekt nur noch für das Aufnehmen des *mousePressed*-Events zuständig sein.
 
 ```processing
 float playerPosX;
