@@ -58,6 +58,7 @@ class Catcher {
 <div>
 <img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level3/newTab.png" width="400">
 </div>
+<br>
 
 2. Füge alle für diese Klasse Funktionen und Attribute zu. Dadurch kannst du Funktionalität kapseln. Die Einstiegsdatei wird dadurch schlanker und übersichtlicher. Derzeit muss sie nur noch die Objekte instanziieren, die Liste/den Stack verwalten und eine Methode auf den Objekten zum darstellen aufrufen.
 
