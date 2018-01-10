@@ -18,5 +18,6 @@ class Coin {
   void display( ) {
     shape(c, xPos, -coinWidth);
     c.translate(0, 2);
+    yPos += 2;
   }
 }
