@@ -32,5 +32,13 @@ println("Lives: "+ lives); // Innerhalb der zyklischen Ausführung
 
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level5/CatcherTutorialLevel5A2)
 
+### Aufgabe 3
+1. Yeah! Wir haben einen dauerhaften Objektregen. Leider ist dieser sehr ineffizient, da der Speicher mit sehr viel Objekten vollgeschrieben wird.
+> Exkurs: In Java gibt es den *garbage collector*, der Objekte, die im Speicher existieren aber nicht mehr referenziert sind automatisch entfernt. Durch dein Entfernen der Objekte aus der *ingame*-Liste hast du keinen Zugriff mehr drauf (nicht mehr referenziert). Demnach könnte sich der *garbage collector* um das Entfernen der Objekte kümmern. Bist du also fein raus? Theoretisch ja, praktisch nein! Es ist *guter Stil* effizient zu programmieren, denn der *garbage collector* ist ein Feature der JVM (Java Virtual Machine). Wenn du beispielsweise das nächste mal etwas in C++ programmierst, hilft es dir gleich mit dem scharfen Blick zur Effizienz zu programmieren.
+
+2. Passe deine Implementierung an, sodass das Objekt bei Kollision mit dem unteren Bildschirmrand nicht nur aus der *ingame*-Liste entfernt, sondern gleich wieder dem Stack hinzugefügt wird. Hast du im herunterfallenden Objekt globale Variablen die du wieder zurücksetzen musst? Bestimmt! Erstelle eine Funktion in der Klasse, die alle relevanten Variablen wieder auf den initialen Zustand zurücksetzt.
+
+[Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level5/CatcherTutorialLevel5A3)
+
 # Nächstes Level
 Hier geht es weiter zum [nächsten Level :arrow_right:](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level6/Processing_Tutorial_Level_%236-CatcherGameTutorial.md)
