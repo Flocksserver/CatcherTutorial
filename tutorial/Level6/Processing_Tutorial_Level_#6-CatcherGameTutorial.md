@@ -31,7 +31,7 @@ int state = stateGameRunning;
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level6/CatcherTutorialLevel6A3)
 
 ### Aufgabe (optional)
-1. Derzeit wird die Schrift den Größen nicht angepasst. Implementiere daher einen Skalierungsfaktor für die Größe der Schrift in Abhängigkeit zur Fenstergröße. Für den Desktop musst du ein bisschen ausprobieren um herauszufinden, welche Größen die passen. Bei Android ist dies einfacher. Hier kannst du den eingebauten Faktor *displayDensity* verwenden.
+1. Derzeit wird die Schrift den Größen nicht angepasst. Implementiere daher einen Skalierungsfaktor für die Größe der Schrift in Abhängigkeit zur Fenstergröße. Für den Desktop musst du ein bisschen ausprobieren um herauszufinden, welche Größen dir passen. Bei Android ist dies einfacher. Hier kannst du den eingebauten Faktor *displayDensity* verwenden.
 ```processing
 float scale;
 ...
