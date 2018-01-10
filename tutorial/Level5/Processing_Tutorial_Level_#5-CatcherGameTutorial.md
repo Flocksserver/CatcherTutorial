@@ -49,7 +49,13 @@ println("Lives: "+ lives); // Innerhalb der zyklischen Ausführung
 
 > Exkurs: Ist dir aufgefallen, dass die Kollisionserkennung nicht ganz korrekt ist wenn du wie ich für die herunterfallenden Objekte Kreise verwendest? Der Algorithmus dafür geht von einem Rechteck aus. Dies wird klar, wenn du die Berechnung der Kollision auf Papier mit den Objekten malst und den Kreis links oder rechts an die Ecke des *Catchers* treffen lässt. Haben wir nun quatsch implementiert? Wieder: Theoretisch ja, praktisch nein! In Spielen (vorrangig bei 3D - aber auch teilweise bei 2D) ist es aus Effizienzgründen gängig, dass eine [*Hitbox*](https://de.wikipedia.org/wiki/Hitbox) definiert wird. Diese Beschreibt den Bereich, in dem Kollision als gegeben angesehen wird. Der Kreis besitzt also eine virtuelle Hitbox um sich herum.
 
+### Aufgabe 5 (optional)
+1. Die Game-Klasse wird immer voller. Lagere doch Funktionalität aus! Ein Beispiel ist das Organisieren der herunterfallenden Objekte. Falls du magst kannst du auch andere spezifische Logik aus der Klasse in eine neue ziehen.
 
+[Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level5/CatcherTutorialLevel5A5)
+
+### Aufgabe 6 (optional)
+1. Teste die Anwendung auch auf Android
 
 # Nächstes Level
 Hier geht es weiter zum [nächsten Level :arrow_right:](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level6/Processing_Tutorial_Level_%236-CatcherGameTutorial.md)
