@@ -38,10 +38,10 @@ class Highscore{
     }else{
       shape(restartButton, gameWidth/2, gameHeight-(gameHeight/5));
       textAlign(CENTER);
-      textFont(font, textWidth * scale);
+      textFont(normalFont);
       fill(50);
       text(restart, gameWidth/2, gameHeight-(gameHeight/5)+(textAscent()/2));
-      textFont(font, textWidthBig * scale);
+      textFont(bigFont);
       fill(yellow);
       text(score, gameWidth/2, gameHeight/2);
     }

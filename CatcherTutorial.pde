@@ -14,7 +14,8 @@ Startscreen startscreen;
 Game game;
 Highscore highscore;
 
-PFont font;
+PFont normalFont;
+PFont bigFont;
 
 float playerPosX;
 float playerPosY;
@@ -34,9 +35,10 @@ void setup() {
   //scale = 3;
   //On Android
   scale = displayDensity;
-  font = createFont("SansSerif", 60 * scale);
   textWidth = 22;
   textWidthBig = 100;
+  normalFont = createFont("SansSerif", textWidth * scale);
+  bigFont = createFont("SansSerif", textWidthBig * scale);
   gameWidth = width;
   gameHeight = height;
   startscreen = new Startscreen();

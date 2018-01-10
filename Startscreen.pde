@@ -13,14 +13,14 @@ class Startscreen{
   float buttonXRight;
   float buttonYTop;
   float buttonYBottom;
-  
+    
    public Startscreen( ) {
     rectMode(CENTER);
     init();
   }
 
   void init( ) {
-    textFont(font, textWidth * scale);
+    textFont(normalFont);
     start = "START";
     startButtonWidth = textWidth(start)*3;
     startButtonHeight = textAscent()*3.5;
