@@ -13,6 +13,7 @@ Start now!
 |[3](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level3/Processing_Tutorial_Level_%233-CatcherGameTutorial.md)|:star: :star: :star:|
 |[4](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level4/Processing_Tutorial_Level_%234-CatcherGameTutorial.md)|:star: :star:|
 |[5](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level5/Processing_Tutorial_Level_%235-CatcherGameTutorial.md)|:star: :star: :star: :star:|
+|[6](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level6/Processing_Tutorial_Level_%236-CatcherGameTutorial.md)|:star: :star: :star:|
 
 :gb::us: English version coming soon
 ## Android Screenshots
