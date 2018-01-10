@@ -22,12 +22,12 @@ void draw() {
     playerPosX = mouseX;
   }
   rect(playerPosX, 500, 50, 10);
-  
+
   if(isTimeForNextOne() && !waitingStack.isEmpty()){
       Coin newCoin = waitingStack.pop();
       coinListInGame.add(newCoin);
   }
-  
+
   for(int i = 0; i < coinListInGame.size() ; i++){
     Coin currentCoin = coinListInGame.get(i);
     currentCoin.display();

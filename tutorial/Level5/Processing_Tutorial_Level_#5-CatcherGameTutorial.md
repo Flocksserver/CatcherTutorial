@@ -40,5 +40,16 @@ println("Lives: "+ lives); // Innerhalb der zyklischen Ausführung
 
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level5/CatcherTutorialLevel5A3)
 
+### Aufgabe 4
+1. Was war nochmal das Ziel des Spiels? Punkte sammeln! Endlich soll dein *Catcher* die Funktionalität bekommen, die er braucht. Erstelle wie beim Leben eine Variable für die aktuellen Punkte.
+2. Jetzt wird es etwas tricky! Überlege dir eine Kollisionserkennung zwischen dem *Catcher* und deinen herunterfallenden Objekten. Vom Prinzip musst du genau wie in Aufgabe 1 vorgehen. Beachte aber, dass diesmal die X **und** die Y-Positionen vom jeweils herunterfallenden Objekt und dem *Catcher* entscheidend sind. Außerdem sind bei der Betrachtung der Y-Richtung nicht nur die untere Kante (*+ objekt.height/2*) sondern auch die obere Kante (*- objekt.height/2*) relevant. Bei der Betrachtung der X-Richtung demnach (*+ objekt.width/2*) und (*- objekt.width/2*). Probiere ruhig etwas länger aus und lass dich nicht entmutigen, wenn du nicht sofort auf eine richtig funktionierende Lösung kommst.
+3. Zähle die aktuellen Punkte bei Kontakt mit dem *Catcher* hoch. Entferne das entsprechenden Objekt aus der *ingame*-List, initialisiere es neu und füge es dem Stack hinzu
+
+[Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level5/CatcherTutorialLevel5A4)
+
+> Exkurs: Ist dir aufgefallen, dass die Kollisionserkennung nicht ganz korrekt ist wenn du wie ich für die herunterfallenden Objekte Kreise verwendest? Der Algorithmus dafür geht von einem Rechteck aus. Dies wird klar, wenn du die Berechnung der Kollision auf Papier mit den Objekten malst und den Kreis links oder rechts an die Ecke des *Catchers* treffen lässt. Haben wir nun quatsch implementiert? Wieder: Theoretisch ja, praktisch nein! In Spielen (vorrangig bei 3D - aber auch teilweise bei 2D) ist es aus Effizienzgründen gängig, dass eine [*Hitbox*](https://de.wikipedia.org/wiki/Hitbox) definiert wird. Diese Beschreibt den Bereich, in dem Kollision als gegeben angesehen wird. Der Kreis besitzt also eine virtuelle Hitbox um sich herum.
+
+
+
 # Nächstes Level
 Hier geht es weiter zum [nächsten Level :arrow_right:](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level6/Processing_Tutorial_Level_%236-CatcherGameTutorial.md)

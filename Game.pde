@@ -52,7 +52,7 @@ class Game {
     Check if a coin has fallen out of the screen -> decrease live by 1
    */
   void checkIngameCoins( ) {
-    for (int i = 0; i < ingameCoins.size()-1; i++) {
+    for (int i = 0; i < ingameCoins.size(); i++) {
       Coin coin = ingameCoins.get(i);
       boolean isCatched = isInCatcherZone(coin);
       boolean isOut = isInOutZone(coin);
