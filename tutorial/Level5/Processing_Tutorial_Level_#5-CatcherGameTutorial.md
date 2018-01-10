@@ -22,10 +22,15 @@ println("Lives: "+ lives); // Innerhalb der zyklischen Ausführung
 </div>
 <br>
 
-3. Implementiere die Kollisionserkennung. Tipp: Du kannst die Y-Position des herunterfallenden Objektes aus dem PShape-Objekt extrahieren, oder die einfachere Variante: Jedesmal beim Aufruf von *translate()* die eine Variable zur yPosition um denselben Wert wie translate erhöhen (achte aber darauf, dass du beim Zeichnen des Objektes nicht die nun erstellte yPos nimmst!).
+3. Implementiere die Kollisionserkennung. Tipp: Du kannst die Y-Position des herunterfallenden Objektes aus dem PShape-Objekt extrahieren, oder die einfachere Variante: Jedesmal beim Aufruf von *translate()* kannst du eine Variable zur yPosition um denselben Wert wie translate erhöhen (achte aber darauf, dass du beim Zeichnen des Objektes nicht die nun erstellte yPos nimmst!).
 4. Zähle ein Leben runter, sobald ein Objekt das Ende des Bildschirms erreicht. Entferne das entsprechenden Objekt aus der *ingame*-Liste
 
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level5/CatcherTutorialLevel5A1)
+
+### Aufgabe 2
+1. Nun möchten wir es nicht bei den 6 Objekten belassen. Als nächstes sollst du einen Dauerregen an Objekten implementieren. Lass den Stack (waitingStack) initial leer. Passe deine Implementierung so an, dass immer dann, wenn der Stack leer ist, ein neues Objekt erstellt wird, das in diesen Stack gepusht wird.
+
+[Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level5/CatcherTutorialLevel5A2)
 
 # Nächstes Level
 Hier geht es weiter zum [nächsten Level :arrow_right:](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level6/Processing_Tutorial_Level_%236-CatcherGameTutorial.md)
