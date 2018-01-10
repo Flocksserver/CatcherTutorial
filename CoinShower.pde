@@ -15,13 +15,12 @@ class CoinShower {
     Add coin from stack to coinarray to display. 
     If no coin on stack anymore, create new coin
    */
-  void start(ArrayList<Coin> ingameCoins, float difficulty) {
+  void start(ArrayList<Coin> ingameCoins) {
     if (isTimeForNextOne()) {
       if (waitingStack.empty()) {
         waitingStack.push(new Coin());
       }
       Coin coin = waitingStack.pop();
-      coin.velocity = difficulty;
       ingameCoins.add(coin);
     }
   }

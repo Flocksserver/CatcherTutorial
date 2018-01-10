@@ -38,7 +38,7 @@ class Game {
   void execute() {
     if (!gameOver()) {
       catcher.draw();
-      shower.start(ingameCoins, difficulty);
+      shower.start(ingameCoins);
       checkIngameCoins();
       setDifficulty();
       statsPrinter.print(lives, score);
@@ -64,6 +64,7 @@ class Game {
         shower.waitingStack.push(coin);
         ingameCoins.remove(coin);
       } else {
+        coin.velocity = difficulty;
         coin.display();
       }
     }
