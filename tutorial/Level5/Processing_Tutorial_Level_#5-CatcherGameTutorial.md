@@ -18,7 +18,7 @@ println("Lives: "+ lives); // Innerhalb der zyklischen Ausführung
 ```
 2. Überlege eine Kollisionserkennung für die herunterfallenden Objekte, sobald diese das Ende des Bildschirms erreicht habe. Beachte die Größe der Objekte. Beispiel: Bei einem PShape, der im Modus *CENTER* gezeichnet wurde, ist die unterste Kante an der Y-Position des Objektes + (Höhe des Objektes / 2)).
 <div>
-<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level5/collision.png" width="400">
+<img src="https://github.com/Flocksserver/CatcherTutorial/raw/master/tutorial/Level5/collision.png" width="600">
 </div>
 <br>
 
