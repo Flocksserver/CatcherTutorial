@@ -11,7 +11,7 @@ In diesem Level geht es um das Darstellen von Text im Fenster. Außerdem integri
 
 ### Aufgabe 1
 1. Wir möchten auf dem Fenster den derzeitigen Score und die Anzahl der Leben sichtbar machen. Schaue dir die Tutorials über [Typography](https://processing.org/tutorials/typography) und [Strings and Drawing Text](https://processing.org/tutorials/text) an.
-2. Erstelle eine neue Klasse, die für das Darstellen der beiden Werte zuständig ist. Platziere die Werte beliebig auf dem Spielbereich (oben links und oben rechts zum Beispiel) Die Schrift und verschiedene, mögliche Schriftgrößen können in der Einstiegsdatei spezifiziert werden.
+2. Erstelle eine neue Klasse, die für das Darstellen der beiden Werte zuständig ist. Platziere die Werte beliebig auf dem Spielbereich (oben links und oben rechts zum Beispiel). Die Schrift und Schriftgrößen können in der Einstiegsdatei spezifiziert werden.
 
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level6/CatcherTutorialLevel6A1)
 
@@ -30,7 +30,7 @@ int state = stateGameRunning;
 
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level6/CatcherTutorialLevel6A3)
 
-### Aufgabe (optional)
+### Aufgabe 4 (optional)
 1. Derzeit wird die Schrift den Größen nicht angepasst. Implementiere daher einen Skalierungsfaktor für die Größe der Schrift in Abhängigkeit zur Fenstergröße. Für den Desktop musst du ein bisschen ausprobieren um herauszufinden, welche Größen dir passen. Bei Android ist dies einfacher. Hier kannst du den eingebauten Faktor *displayDensity* verwenden.
 ```processing
 float scale;
