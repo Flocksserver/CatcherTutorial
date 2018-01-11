@@ -10,7 +10,7 @@ In diesem Level geht es um das Anpassen von Größen in Abhängikeit der Display
 | Programmierung        | Aufruf von Funktionen, Variablen,  Events (mousePressed), Bedingte Anweisung und Verzweigung (if, else)), Funktionen, for-Schleife, Klassen, Objekte, Instanzen, Konstruktor|
 
 ### Aufgabe 1
-1. Das Spiel soll auf nicht nur in den Maßen 400x640 dargestellt werden können. Das wird spätestens auf Android-Smartphones mit verschiedenen Bildschirmgrößen relevant. Aber auch auf dem Desktop ist ein Spiel im *Vollbildmodus* interessant. Aktiviere den Vollbildmodus und führe die Anwendung aus.
+1. Das Spiel soll nicht nur in den Maßen 400x640 dargestellt werden können. Das wird spätestens auf Android-Smartphones mit verschiedenen Bildschirmgrößen relevant. Aber auch auf dem Desktop ist ein Spiel im *Vollbildmodus* interessant. Aktiviere den Vollbildmodus und führe die Anwendung aus.
 ```processing
 //size(400, 640);
 fullScreen(P2D); //P2D ist ein alternativer Renderer in Processing
