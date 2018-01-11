@@ -1,5 +1,5 @@
 # Zusammenfassung
-In diesem Level lernst du, wie man Klassen aus Bibliotheken einbinden und eigene Klassen erstellst. Du lernst was Instanzen von Klassen sind und wir strukturieren die Anwendung etwas um.
+In diesem Level lernst du, wie man Klassen aus Bibliotheken einbindet und eigene Klassen erstellt. Du erfährst außerdem was Instanzen von Klassen sind und wir strukturieren die Anwendung etwas um.
 
 | Thema                 | Voraussetzungen         |
 | --------------------- | ----------------------- |
@@ -66,12 +66,12 @@ class Catcher {
 </div>
 <br>
 
-2. Füge alle für diese Klasse Funktionen und Attribute zu. Dadurch kannst du Funktionalität kapseln. Die Einstiegsdatei wird dadurch schlanker und übersichtlicher. Derzeit muss sie nur noch die Objekte instanziieren, die Liste/den Stack verwalten und eine Methode auf den Objekten zum darstellen aufrufen.
+2. Füge alle für diese Klasse Funktionen und Attribute zu. Dadurch kannst du Funktionalität kapseln. Die Einstiegsdatei wird dadurch schlanker und übersichtlicher. Derzeit muss sie nur noch die Objekte instanziieren, die Liste/den Stack verwalten und eine Methode auf den Objekten zum Darstellen aufrufen.
 
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level3/CatcherTutorialLevel3A2/)
 
 ### Aufgabe 3
-1. Um die Einstiegsdatei noch übersichtlicher zu gestalten wiederhole die Aufgabe 2 mit dem *Catcher*. Hierzu bietet es sich an innerhalb der Catcher-Klasse auch die PShape-Klasse zu nutzen.
+1. Um die Einstiegsdatei noch übersichtlicher zu gestalten wiederhole die Aufgabe 2 mit dem *Catcher*. Hierzu bietet es sich an, innerhalb der Catcher-Klasse auch die PShape-Klasse zu nutzen.
 2. Wir programmieren ein Spiel. Da ist es angebracht, spiel-spezifische Logik in einer entsprechenden Klasse zu organisieren. Somit reduzieren wir die Einstiegsdatei noch weiter. Erstelle eine *Game*-Klasse und verschiebe die restliche Logik aus der Einstiegsdatei. Nun sollte die Einstiegsdatei neben dem Instanziieren der Game-Klasse und ein startender Methode-Aufruf auf dessen Objekt nur noch für das Aufnehmen des *mousePressed*-Events zuständig sein.
 
 ```processing
