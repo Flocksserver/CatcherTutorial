@@ -36,7 +36,7 @@ void setup() {
   //On Desktop
   scale = 1 + gameWidth/1000;
   //On Android
-  scale = displayDensity;
+  //scale = displayDensity;
   textWidth = 22;
   textWidthBig = 100;
   normalFont = createFont("SansSerif", textWidth * scale);
