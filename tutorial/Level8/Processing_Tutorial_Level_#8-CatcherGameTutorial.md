@@ -2,10 +2,10 @@
 Das war es, jetzt bist du dran mit dem Weiterentwickeln der Anwendung. Hast du noch Ideen? Ich habe unten in einer Liste einige mögliche Erweiterungen aufgelistet. Mit dem Abschluss meines Tutorials hast du nun viele Grundlagen zur Programmierung mitgenommen und kannst auch dein ganz eigenes Spiel anfangen und umsetzen. Der Kreativität sind keine Grenzen gesetzt.
 
 ## Mögliche Erweiterungen
-- Verschiedene herunterfallende Objekte die mehr Punkte oder minus Punkte geben oder andere positive/negative Effekte verursachen. Mögliche Effekte: Denkbar ist die Größe des *Catchers* zu verändern oder Leben dazuzubekommen oder oder oder.
+- Verschiedene herunterfallende Objekte, die mehr Punkte oder minus Punkte geben oder andere positive/negative Effekte verursachen. Mögliche Effekte: Denkbar ist die Größe des *Catchers* zu verändern oder Leben dazuzubekommen.
 - Mehr Schwierigkeitsstufen einbauen
 - Umbauen in 3D
-- Highscore speichern und anzeigen
+- Highscores speichern und anzeigen
 - Steuerung des *Catchers* über die [Sensoren](http://android.processing.org/tutorials/sensors/index.html) des Android-Smartphones
 - Icons hinzufügen
 - Android-App signieren und kompilieren, um diese Freunden zum Installieren zu geben.
