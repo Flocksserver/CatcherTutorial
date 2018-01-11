@@ -1,5 +1,5 @@
 # Zusammenfassung
-In diesem Level bauen wir Spielmechanik ein! Du lernst Kollisionsprüfungen hinzuzufügen und Zähler für den Spielstand und Leben. Außerdem sollen nicht nur eine endliche Anzahl an Objekten herunterfallen sondern ein dauerhafter Objektregen implementiert werden.
+In diesem Level bauen wir Spielmechanik ein! Du lernst Kollisionsprüfungen hinzuzufügen und Zähler für den Spielstand und Leben. Außerdem sollen nicht nur eine endliche Anzahl an Objekten herunterfallen, sondern ein dauerhafter Objektregen implementiert werden.
 
 | Thema                 | Voraussetzungen         |
 | --------------------- | ----------------------- |
@@ -10,7 +10,7 @@ In diesem Level bauen wir Spielmechanik ein! Du lernst Kollisionsprüfungen hinz
 | Programmierung        | Aufruf von Funktionen, Variablen,  Events (mousePressed), Bedingte Anweisung und Verzweigung (if, else)), Funktionen, for-Schleife, Klassen, Objekte, Instanzen, Konstruktor|
 
 ### Aufgabe 1
-1. Um die Anzahl der noch übrigen Leben zu zählen, integriere eine Variable dafür. Der derzeitige Stand muss derzeit nicht im Fenster angezeigt werden. Um die Anzahl trotzdem sichtbar zu machen, kannst du dir in der Konsole den Wert der Variablen ausgeben lassen.
+1. Um die Anzahl der noch übrigen Leben zu zählen, integriere eine Variable dafür. Der derzeitige Stand muss im Moment noch nicht im Fenster angezeigt werden. Um die Anzahl trotzdem sichtbar zu machen, kannst du dir in der Konsole den Wert der Variablen ausgeben lassen.
 ```processing
 int lives = 5;
 ...
@@ -22,7 +22,7 @@ println("Lives: "+ lives); // Innerhalb der zyklischen Ausführung
 </div>
 <br>
 
-3. Implementiere die Kollisionserkennung. Tipp: Du kannst die Y-Position des herunterfallenden Objektes aus dem PShape-Objekt extrahieren, oder die einfachere Variante: Jedesmal beim Aufruf von *translate()* kannst du eine Variable zur yPosition um denselben Wert wie translate erhöhen (achte aber darauf, dass du beim Zeichnen des Objektes nicht die nun erstellte yPos nimmst!).
+3. Implementiere die Kollisionserkennung. Tipp: Du kannst die Y-Position des herunterfallenden Objektes aus dem PShape-Objekt extrahieren, oder die einfachere Variante: Jedes Mal beim Aufruf von *translate()* kannst du eine Variable zur Y-Position um denselben Wert wie *translate* erhöhen (achte aber darauf, dass du beim Zeichnen des Objektes nicht die nun erstellte yPos nimmst!).
 4. Zähle ein Leben runter, sobald ein Objekt das Ende des Bildschirms erreicht. Entferne das entsprechenden Objekt aus der *ingame*-Liste
 
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level5/CatcherTutorialLevel5A1)
@@ -34,7 +34,7 @@ println("Lives: "+ lives); // Innerhalb der zyklischen Ausführung
 
 ### Aufgabe 3
 1. Yeah! Wir haben einen dauerhaften Objektregen. Leider ist dieser sehr ineffizient, da der Speicher mit sehr viel Objekten vollgeschrieben wird.
-> Exkurs: In Java gibt es den *garbage collector*, der Objekte, die im Speicher existieren aber nicht mehr referenziert sind automatisch entfernt. Durch dein Entfernen der Objekte aus der *ingame*-Liste hast du keinen Zugriff mehr drauf (nicht mehr referenziert). Demnach könnte sich der *garbage collector* um das Entfernen der Objekte kümmern. Bist du also fein raus? Theoretisch ja, praktisch nein! Es ist *guter Stil* effizient zu programmieren, denn der *garbage collector* ist ein Feature der JVM (Java Virtual Machine). Wenn du beispielsweise das nächste mal etwas in C++ programmierst, hilft es dir gleich mit dem scharfen Blick zur Effizienz zu programmieren.
+> Exkurs: In Java gibt es den *garbage collector*, der Objekte, die im Speicher existieren aber nicht mehr referenziert sind, automatisch entfernt. Durch dein Entfernen der Objekte aus der *ingame*-Liste hast du keinen Zugriff mehr drauf (nicht mehr referenziert). Demnach könnte sich der *garbage collector* um das Entfernen der Objekte kümmern. Bist du also fein raus? Theoretisch ja, praktisch nein! Es ist *guter Stil* effizient zu programmieren, denn der *garbage collector* ist ein Feature der JVM (Java Virtual Machine). Wenn du beispielsweise das nächste mal etwas in C++ programmierst, hilft es dir gleich mit dem scharfen Blick zur Effizienz zu programmieren.
 
 2. Passe deine Implementierung an, sodass das Objekt bei Kollision mit dem unteren Bildschirmrand nicht nur aus der *ingame*-Liste entfernt, sondern gleich wieder dem Stack hinzugefügt wird. Hast du im herunterfallenden Objekt globale Variablen die du wieder zurücksetzen musst? Bestimmt! Erstelle eine Funktion in der Klasse, die alle relevanten Variablen wieder auf den initialen Zustand zurücksetzt.
 
@@ -42,7 +42,7 @@ println("Lives: "+ lives); // Innerhalb der zyklischen Ausführung
 
 ### Aufgabe 4
 1. Was war nochmal das Ziel des Spiels? Punkte sammeln! Endlich soll dein *Catcher* die Funktionalität bekommen, die er braucht. Erstelle wie beim Leben eine Variable für die aktuellen Punkte.
-2. Jetzt wird es etwas tricky! Überlege dir eine Kollisionserkennung zwischen dem *Catcher* und deinen herunterfallenden Objekten. Vom Prinzip musst du genau wie in Aufgabe 1 vorgehen. Beachte aber, dass diesmal die X **und** die Y-Positionen vom jeweils herunterfallenden Objekt und dem *Catcher* entscheidend sind. Außerdem sind bei der Betrachtung der Y-Richtung nicht nur die untere Kante (*+ objekt.height/2*) sondern auch die obere Kante (*- objekt.height/2*) relevant. Bei der Betrachtung der X-Richtung demnach (*+ objekt.width/2*) und (*- objekt.width/2*). Probiere ruhig etwas länger aus und lass dich nicht entmutigen, wenn du nicht sofort auf eine richtig funktionierende Lösung kommst.
+2. Jetzt wird es etwas tricky! Überlege dir eine Kollisionserkennung zwischen dem *Catcher* und deinen herunterfallenden Objekten. Vom Prinzip musst du genau wie in Aufgabe 1 vorgehen. Beachte aber, dass diesmal die X **und** die Y-Positionen vom jeweils herunterfallenden Objekt **und** dem *Catcher* entscheidend sind. Außerdem sind bei der Betrachtung der Y-Richtung nicht nur die untere Kante (*+ objekt.height/2*) sondern auch die obere Kante (*- objekt.height/2*) relevant. Bei der Betrachtung der X-Richtung demnach (*+ objekt.width/2*) und (*- objekt.width/2*). Probiere ruhig etwas länger aus und lass dich nicht entmutigen, wenn du nicht sofort auf eine richtig funktionierende Lösung kommst.
 3. Zähle die aktuellen Punkte bei Kontakt mit dem *Catcher* hoch. Entferne das entsprechenden Objekt aus der *ingame*-List, initialisiere es neu und füge es dem Stack hinzu
 
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level5/CatcherTutorialLevel5A4)
