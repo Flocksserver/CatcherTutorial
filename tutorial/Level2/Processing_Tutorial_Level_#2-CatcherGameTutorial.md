@@ -1,5 +1,5 @@
 # Zusammenfassung
-In diesem Level lernst du eine neue Möglichkeit kennen Formen zu zeichnen, um mehr Kontrolle über diese Objekte zu haben. Weiter werden wir kleine Kreise animiert vom oben nach unten herab fallen lassen. Eine Datenstruktur ArrayList und die for-Schleife werden eingeführt sowie das zeitlich bedingte Ausführen einer Funktion. Außerdem schreibst du eine eigene Funktion.
+In diesem Level lernst du eine neue Möglichkeit kennen Formen zu zeichnen, um mehr Kontrolle über diese Objekte zu haben. Weiter werden wir kleine Kreise animiert von oben nach unten herab fallen lassen. Eine Datenstruktur ArrayList und die for-Schleife werden eingeführt sowie das zeitlich bedingte Ausführen einer Funktion. Außerdem schreibst du eine eigene Funktion!
 
 | Thema                 | Voraussetzungen         |
 | --------------------- | ----------------------- |
@@ -10,7 +10,7 @@ In diesem Level lernst du eine neue Möglichkeit kennen Formen zu zeichnen, um m
 | Programmierung        | Aufruf von Funktionen, Variablen,  Events (mousePressed), Bedingte Anweisung und Verzweigung (if, else))|
 
 ## Programmierung
-Bisher nutzt du nur die beiden Standardfunktionen von Processing (setup und draw). Das wird in diesem Level ändern. Funktionen sind Programmteile, die aufgerufen werden können (einmal oder häufiger). Sie können Werte zurück geben nachdem der Programmcode innerhalb der Funktion durchgelaufen ist - muss aber nicht. Das Schlüsselwort **void** gibt an, dass diese Funktion kein Rückgabewert hat. Wenn du etwas zurükgeben möchtest, musst du dies statt dem *void* angeben. Zum Beispiel **boolean** (*int, float, String, PShape, ...* sind genauso möglich).
+Bisher nutzt du nur die beiden Standardfunktionen von Processing (setup und draw). Das wird sich in diesem Level ändern. Funktionen sind Programmteile, die aufgerufen werden können (einmal oder häufiger). Sie können Werte zurück geben nachdem der Programmcode innerhalb der Funktion durchgelaufen ist - müssen aber nicht. Das Schlüsselwort **void** gibt an, dass diese Funktion kein Rückgabewert hat. Wenn du etwas zurükgeben möchtest, musst du dies statt dem *void* angeben. Zum Beispiel **boolean** (*int, float, String, PShape, ...* sind genauso möglich).
 ```processing
 void draw() { // Kein Rückgabewert
 }
@@ -42,8 +42,8 @@ Es existiert bereits ein *Catcher* um Objekte zu fangen. Etwas zu fangen gibt es
 1. Ein einzelnes Objekt ist nicht genug! Erstelle 6 weitere.
 2. Um auf die Objekte besser zugreifen zu können, kannst du diese in einer [Liste](https://processing.org/reference/ArrayList.html) organisiert. Ok, nicht nur kannst - solltest du auch!
 3. Setze jedes Objekt auf eine andere Startposition
-4. Setze die x-Startposition **zufällig** und die y-Position oben außerhalb des Fensters
-5. Otional: Objekte werden zufällig entlang der x-Achse gesetzt. Das bedeutet, dass diese auch soweit am rechten oder linken Rand platziert werden, dass die Objekte teils abgeschnitten sind. Hast du eine Idee wie du das verhindern kannst?
+4. Setze die X-Startposition **zufällig** und die Y-Position oben außerhalb des Fensters
+5. Optional: Objekte werden zufällig entlang der X-Achse gesetzt. Das bedeutet, dass diese auch soweit am rechten oder linken Rand platziert werden, dass die Objekte teils abgeschnitten sind. Hast du eine Idee wie du das verhindern kannst?
 
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level2/CatcherTutorialLevel2A2/CatcherTutorialLevel2A2.pde)
 
