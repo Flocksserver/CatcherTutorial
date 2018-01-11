@@ -1,5 +1,5 @@
 # Zusammenfassung
-In diesem Level fügen wir neue Zustände hinzu um das Spiel zu starten und neu zu starten.
+In diesem Level fügen wir neue Zustände hinzu, um das Spiel zu starten und neu zu starten.
 
 | Thema                 | Voraussetzungen         |
 | --------------------- | ----------------------- |
@@ -12,26 +12,26 @@ In diesem Level fügen wir neue Zustände hinzu um das Spiel zu starten und neu 
 ### Aufgabe 1
 1. Erstelle einen neuen Zustand, der das Warten auf den Spielstart repräsentiert.
 2. Implementiere eine Klasse, die den Startbildschirm zeigt. Es reicht fürs erste, wenn dieser Screen ein Rechteck als Button enthält, auf dem **START** steht.
-3. Nun ist die Frage wie man den Button-Klick registriert? Ganz einfach: Über die X und Y-Positionen des **mousePressed**-Events. Füge hierzu in der Einstiegsdatei auch die Y-Position mit.
+3. Nun ist die Frage wie du den Button-Klick registrierst? Ganz einfach: Über die X und Y-Positionen des **mousePressed**-Events. Füge hierzu in der Einstiegsdatei auch die Y-Position mit ein.
 ```processing
 if (mousePressed) {
   playerPosX = mouseX;
   playerPosY = mouseY;
 }
 ```
-4. Wenn die X und Y-Position innerhalb des Bereiches des Rechtecks ist, wurde der Button geklickt. Leite dann in den nächsten Zustand über.
+4. Wenn die X und Y-Position innerhalb des Bereiches des Rechtecks sind, wurde der Button geklickt. Leite dann in den nächsten Zustand über.
 
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level7/CatcherTutorialLevel7A1)
 
 ### Aufgabe 2
-1. Erstelle einen (oder wenn nötige mehrere) Zustand/Zustände um den erreichten Score anzuzeigen und das Spiel über einen Button neu starten zu können.
+1. Erstelle einen (oder wenn nötige mehrere) Zustand/Zustände, um den erreichten Score anzuzeigen und das Spiel über einen Button neustarten zu können.
 2. Implementiere eine Klasse, die den Score zeigt und den Button zum Neustart darstellt. Tipp: Beachte, dass die X und Y-Position des Spielers nicht gleich den Button-Klick auf Restart auslösen sollen, wenn dieser aus Versehen in dem korrekten Bereich im Spiel war, wo später der Restart-Button liegt.
-3. Überlege dir, wie du alle Parameter des Game-Objektes (und alle damit verwandten) so zurücksetzt.
+3. Überlege dir, wie du alle Parameter des Game-Objektes (und alle, die damit zu tun haben) so zurücksetzt.
 
 [Mögliche Lösung](https://github.com/Flocksserver/CatcherTutorial/blob/master/tutorial/Level7/CatcherTutorialLevel7A2)
 
 ### Aufgabe 3 (optional)
-1. Zentralisiere alle Variablen die du in der gesamten Anwendung vereinheitlicht haben möchtest in der Einstiegsdatei (Beispiel: Farben - Ich habe zwei Hauptfarben. Dunkles Grau, Weiß und Gelb).
+1. Zentralisiere alle Variablen die du in der gesamten Anwendung vereinheitlicht haben möchtest in der Einstiegsdatei (Beispiel: Farben - Ich habe drei Hauptfarben. Dunkles Grau, Weiß und Gelb).
 ```processing
 color darkGrey = color(45, 50, 50);
 color yellow = color(255, 255, 0);
