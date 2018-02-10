@@ -18,7 +18,8 @@ Start now!
 
 :gb::us: English version coming soon
 
- <iframe src="https://flocksserver.github.io/CatcherTutorial/docs/catcherJS/?width=400&height=640"></iframe> 
+ <iframe width=400 height=640
+ src="https://flocksserver.github.io/CatcherTutorial/docs/catcherJS/index.html?width=400&height=640" ></iframe>
 
 ## Android Screenshots
 <div>
